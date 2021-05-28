@@ -1,4 +1,4 @@
-package com.doubleg.folhadeponto.model
+package com.doubleg.folhadeponto.room.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

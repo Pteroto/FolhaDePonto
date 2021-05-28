@@ -1,8 +1,9 @@
-package com.doubleg.folhadeponto
+package com.doubleg.folhadeponto.view
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.doubleg.folhadeponto.R
 
 class CreateLoginActivity : AppCompatActivity() {
 

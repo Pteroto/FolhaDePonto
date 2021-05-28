@@ -1,9 +1,10 @@
-package com.doubleg.folhadeponto.model
+package com.doubleg.folhadeponto.room.model
 
 import androidx.room.Entity
+import androidx.room.Index
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(indices = [Index(value = ["name"], unique = true)])
 data class User(
     @PrimaryKey(autoGenerate = true) val id: Int,
     val name: String,

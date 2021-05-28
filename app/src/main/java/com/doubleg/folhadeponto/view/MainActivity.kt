@@ -1,10 +1,11 @@
-package com.doubleg.folhadeponto
+package com.doubleg.folhadeponto.view
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.doubleg.folhadeponto.R
 import com.doubleg.folhadeponto.databinding.ActivityMainBinding
-import com.doubleg.folhadeponto.model.User
+import com.doubleg.folhadeponto.room.model.User
 import com.doubleg.folhadeponto.room.Database
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

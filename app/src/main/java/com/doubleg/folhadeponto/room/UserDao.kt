@@ -1,7 +1,7 @@
 package com.doubleg.folhadeponto.room
 
 import androidx.room.*
-import com.doubleg.folhadeponto.model.User
+import com.doubleg.folhadeponto.room.model.User
 
 @Dao
 interface UserDao {

@@ -1,4 +1,4 @@
-package com.doubleg.folhadeponto
+package com.doubleg.folhadeponto.view
 
 import android.app.Application
 import com.doubleg.folhadeponto.room.Database

@@ -4,51 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="64dp"
-    android:layout_marginEnd="64dp"
-    tools:context=".LoginActivity">
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    tools:context=".view.LoginActivity">
 
+    <View
+        android:id="@+id/viewCenter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewLoginSign"
+        android:id="@+id/textViewLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login: "
         android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/editTextLogin"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextLoginSign"
+        android:id="@+id/editTextLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLoginSign"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/textViewPassword"
         tools:ignore="MissingConstraints" />
 
-
-
     <TextView
-        android:id="@+id/textViewPasswordSign"
+        android:id="@+id/textViewPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Senha: "
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLoginSign"
+        app:layout_constraintBottom_toTopOf="@id/editTextPassword"
         tools:ignore="MissingConstraints" />
 
-
     <EditText
-        android:id="@+id/editTextPasswordSign"
+        android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPasswordSign"
+        app:layout_constraintBottom_toTopOf="@id/viewCenter"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Login"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordSign"
+        app:layout_constraintTop_toBottomOf="@id/viewCenter"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -56,8 +64,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:text="Sign UP"
-        app:layout_constraintStart_toEndOf="@+id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordSign" />
+        app:layout_constraintEnd_toEndOf="@id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@id/viewCenter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
